@@ -1,0 +1,85 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner input =new Scanner(System.in);
+	//deklarasi variabel
+	int mulai;
+	int pilih1,pilih2,pilih3,pilih4,pilih5;
+	int hasil;
+	System.out.println("TES MENTAL HEALTH");
+	System.out.println("============================");
+	System.out.println("Bagaimana kabar mu hari ini?");
+	System.out.println("1. Gak ada jawaban yang benar atau salah. Isilah dengan jujur sesuai kepribadianmu");
+    System.out.println("2. Santai aja, tes ini gak diberi waktu, kok.");
+    System.out.println("3. Cari tempat yang nyaman dan kondusif supaya kamu lebih fokus");
+    System.out.println("4. Jika kamu keluar di tengah tes, maka seluruh proses tes dan jawaban akan hilang.");
+    System.out.println("5. Hasil tes bisa kamu dapatkan setelah mengisi semua pertanyaan dengan lengkap");
+    System.out.println("\nSELAMAT MENGIKUTI TES!!!!!!");
+    System.out.println("\n\n ketik 1 untuk MULAI");
+    mulai=input.nextInt();
+    
+    System.out.println("KETERANGAN = MASUKAN ANGKA SESUAI DENGAN PILIHAN (1,2,3,4)");
+    
+    System.out.println("\nDalam satu bulan terakhir, apakah kamu merasa tidak sanggup mengatasi kesulitan?");
+    
+    System.out.println("Iya lebih dari biasanya\t\t=4");
+    System.out.println("Sama seperti biasanya\t\t=3");
+    System.out.println("Kurang dari biasanya\t\t=2");
+    System.out.println("Sangat kurang dari biasanya\t=1");
+    pilih1=input.nextInt();
+    
+    System.out.println("\nDalam satu bulan terakhir, apakah kamu merasa tidak bahagia dan tertekan?");
+    
+    System.out.println("Iya lebih dari biasanya\t\t=4");
+    System.out.println("Sama seperti biasanya\t\t=3");
+    System.out.println("Kurang dari biasanya\t\t=2");
+    System.out.println("Sangat kurang dari biasanya\t=1");
+    pilih2=input.nextInt();
+    
+    System.out.println("\nDalam satu bulan terakhir, apakah kamu merasa tenang dan damai?");
+    
+    System.out.println("Iya lebih dari biasanya\t\t=1");
+    System.out.println("Sama seperti biasanya\t\t=2");
+    System.out.println("Kurang dari biasanya\t\t=3");
+    System.out.println("Sangat kurang dari biasanya\t=4");
+    pilih3=input.nextInt();
+    
+    System.out.println("\nDalam satu bulan terakhir, apakah kamu bisa menghadapi masalah-masalah yang ada?");
+    
+    System.out.println("Iya lebih dari biasanya\t\t=1");
+    System.out.println("Sama seperti biasanya\t\t=2");
+    System.out.println("Kurang dari biasanya\t\t=3");
+    System.out.println("Sangat kurang dari biasanya\t=4");
+    pilih4=input.nextInt();
+    
+    System.out.println("\nDalam satu bulan terakhir, apakah kamu susah tidur karena khawatir?");
+    
+    System.out.println("Iya lebih dari biasanya\t\t=4");
+    System.out.println("Sama seperti biasanya\t\t=3");
+    System.out.println("Kurang dari biasanya\t\t=2");
+    System.out.println("Sangat kurang dari biasanya\t=1");
+    pilih5=input.nextInt();
+    
+    hasil=pilih1+pilih2+pilih3+pilih4+pilih5;
+    System.out.println("Skor kamu adalah\t"+hasil);
+    
+    if (hasil<10){
+        System.out.println("\nBAIK");
+        System.out.println("\nMeskipun kamu memiliki beban di hidupmu, namun kamu masih dapat mengatasinya. Kamu juga bisa berkegiatan seperti biasa dan merasa punya kendali dalam hidupmu.");
+    }
+    else if (hasil>10&&hasil<15){
+        System.out.println("SEDANG");
+        System.out.println("\nKondisi kesehatan mental kamu mungkin sedang tidak buruk, tapi juga tidak begitu baik. Saat ini kamu mengalami tekanan lebih banyak dari biasanya. Kamu mungkin mulai merasa ragu apakah kamu dapat menangani tekanan yang kamu rasakan sekarang.");
+    }
+    else {
+        System.out.println("BURUK");
+        System.out.println("\nSaat ini kamu mengalami banyak tekanan di hidupmu. Kamu mungkin mulai merasa cemas dengan beberapa hal di hidupmu, dan kecemasan itu mulai memengaruhi kehidupan sehari-hari. Selain itu, kamu juga mulai merasa hilang kontrol akan hidupmu.");
+    }
+    
+	}
+	
+}
+
+
